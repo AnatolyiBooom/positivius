@@ -1,0 +1,138 @@
+.contacts {
+    padding-bottom: 140px;
+
+    &__input-list {
+        display: flex;
+        padding: 60px 100px;
+        border-radius: 45px;
+        background: var(--Grey, #F3F3F3);
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__top {
+        display: flex;
+        gap: 35px;
+    }
+
+    &__top label {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        max-width: 500px;
+        z-index: 11;
+
+    }
+
+    &__enter-place {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__enter-place label {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__input,
+    &__text {
+        background-color: white;
+        resize: none;
+        border-radius: 14px;
+        border: 1px solid #000;
+    }
+
+    &__input {
+        padding: 18px 30px;
+    }
+
+    &__text {
+        min-height: 190px;
+        padding: 18px 30px;
+    }
+
+    &__img {
+        position: absolute;
+        right: -322px;
+    }
+
+    &__top-label {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .form-control {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+
+    .form-control:focus-within {
+        color: var(--form-control-color);
+    }
+
+    input[type="radio"] {
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        /* For iOS < 15 */
+        background-color: var(--form-background);
+        /* Not removed via appearance */
+        margin: 0;
+
+        font: inherit;
+        color: currentColor;
+        width: 28px;
+        height: 28px;
+        border: 1px solid currentColor;
+        border-radius: 50%;
+        transform: translateY(-0.075em);
+
+        display: grid;
+        place-content: center;
+    }
+
+    input[type="radio"]::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em var(--form-control-color);
+        /* Windows High Contrast Mode */
+        background-color: $green;
+    }
+
+    input[type="radio"]:checked::before {
+        transform: scale(1);
+    }
+
+    .just-validate-error-label {
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        top: 37px;
+    }
+
+    .just-validate-error-field {
+        border-color: #FF6F6F;
+    }
+
+
+}

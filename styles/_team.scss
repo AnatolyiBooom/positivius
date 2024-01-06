@@ -1,0 +1,77 @@
+.team {
+    padding-bottom: 100px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border-radius: 45px;
+        border: 1px solid #191A23;
+        background: #FFF;
+        box-shadow: 0px 5px 0px 0px #191A23;
+        padding: 40px 35px;
+        position: relative;
+    }
+
+    &__item-top {
+        display: flex;
+        align-items: end;
+        gap: 24px;
+        padding-bottom: 28px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 28px;
+    }
+
+    &__item-top-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        color: #000;
+        font-family: Space Grotesk;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__profession {
+        color: #000;
+        font-family: Space Grotesk;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__item-desc {
+        color: #000;
+        font-family: Space Grotesk;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 40px;
+        right: 35px;
+    }
+
+    &__btn-block {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__btn {
+        padding: 20px 70px;
+    }
+}

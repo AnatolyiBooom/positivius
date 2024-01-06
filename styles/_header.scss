@@ -1,0 +1,50 @@
+.header {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo  {
+      margin-right: 20px;
+    }
+
+    &__nav {
+        padding-top: 6px;
+    }
+
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__nav-link {
+        color: #000;
+        font-family: Space Grotesk;
+        font-size: clamp(14px, 1.5vw, 20px); 
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        white-space: nowrap;
+        transition: .3s color ease-in-out;
+    }
+
+    &__nav-link:hover {
+        color: $green;
+    }
+
+
+    &__btn:hover {
+        background-color: $dark;
+        color:white;
+        border-color : $green;
+    }
+
+    &__nav-btn {
+        display: none;
+    }
+}

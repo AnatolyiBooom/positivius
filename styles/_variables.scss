@@ -1,0 +1,35 @@
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin violetBtn {
+  border-radius: 10px;
+  padding: 22px 47px;
+}
+
+@mixin font24 {
+  color: $black;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+@mixin font14gray {
+  color: $gray;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font16 {
+  color: $black;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}

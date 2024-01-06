@@ -1,0 +1,44 @@
+@media(max-width: 880px) {
+    .top-title {
+        flex-direction: column;
+    }
+
+    .content-desc br {
+        display: none;
+    }
+
+    .content-desc {
+        text-align: center;
+    }
+
+    .services {
+        &__proposal {
+            padding: 60px;
+        } 
+
+        &__proposal-img {
+            display: none;
+        }
+    }
+
+    .case {
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            padding: 57px 31px;
+        }
+
+        &__item {
+
+            gap: 5px;
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+
+    .team {
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.testimonials {
+    padding-bottom: 140px;
+
+
+    &__block {
+        border-radius: 45px;
+        background: var(--Dark, #191A23);
+        padding-top: 84px;
+        padding-bottom: 68px;
+    }
+
+    &__swiper {
+        background-color: $dark;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__commentary {
+        padding: 48px 52px;
+        border-radius: 45px;
+        border: 1px solid $green;
+        margin-bottom: 48px;
+        position: relative;
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: Space Grotesk;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: $dark;
+    }
+
+    &__array {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        border-right: 1px solid $green;
+        border-bottom: 1px solid $green;
+        background-color: $dark;
+        transform: rotate(45deg);
+        left: 63px;
+        bottom: -23px;
+    }
+
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+        margin-left: 80px;
+        margin-bottom: 124px;
+    }
+
+    &__name {
+        color: var(--Green, #B9FF66);
+        font-family: Space Grotesk;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__proffesion {
+        color: #FFF;
+        font-family: Space Grotesk;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__nav {
+        width: 60%;
+        position: relative;
+        margin: 0 auto;
+    }
+}

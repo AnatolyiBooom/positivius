@@ -1,0 +1,98 @@
+.process {
+
+    padding-bottom: 140px;
+
+
+    ul.accordion-list {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        list-style: none;
+
+
+        li {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+            background-color: #FFF;
+            padding: 60px 40px 30px 40px;
+            margin: 0 auto 15px auto;
+            border: 1px solid #eee;
+            border-radius: 45px;
+            cursor: pointer;
+            border-radius: 45px;
+            border: 1px solid #191A23;
+            background: var(--Grey, #F3F3F3);
+            box-shadow: 0px 5px 0px 0px #191A23;
+
+             &.active {
+                background-color: $green;
+                h3 {
+                    &:after {
+                        content: url(../images/minus.svg);
+                    }
+                }
+            }
+
+            h3 {
+                position: relative;
+                display: flex;
+                align-items: center;
+                color: #000;
+                font-family: Space Grotesk;
+                font-size: clamp(1rem, 2.5vw, 2rem); 
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 20px;
+
+
+                &:after {
+                    content: url(../images/Plus.svg);
+                    position: absolute;
+                    right: 0;
+                 
+                    color: #Fcc110;
+                    transition: all 0.3s ease-in-out;
+                    font-size: 18px;
+                }
+
+                span {
+                    color: #000;
+                    font-family: Space Grotesk;
+                    font-size: clamp(30px, 4vw, 60px);
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-right: 25px;
+                }
+            }
+
+            div.answer {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+                padding-top: 30px;
+                border-top: 1px solid $dark;
+
+                p {
+                    position: relative;
+                    display: block;
+                    font-weight: 300;
+                    padding: 10px 0 0 0;
+                    cursor: pointer;
+                    line-height: 150%;
+                    margin: 0 0 15px 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

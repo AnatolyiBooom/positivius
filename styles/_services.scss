@@ -1,0 +1,195 @@
+.services {
+    padding-bottom: 40px;
+
+
+    &__list {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 123px;
+    }
+
+    &__item {
+        overflow: hidden;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 50px;
+        border-radius: 45px;
+        border: 1px solid var(--Dark, #191A23);
+        box-shadow: 0px 5px 0px 0px #191A23;
+    }
+
+    &__item-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item-title {
+        // display: flex;
+        flex-direction: column;
+        color: #000;
+        font-family: Space Grotesk;
+        font-size: clamp(20px, 4vw, 30px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+
+    &__item-title span {
+        white-space: nowrap;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 210px;
+        object-fit: contain;
+    }
+
+    &__item-link {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--Black, #000);
+        font-family: Space Grotesk;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        white-space: nowrap;
+        width: max-content;
+        padding: 5px 8px;
+        margin-right: -5px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        transition: .3s color ease-in-out, .3s background ease-in-out, .3s border ease-in-out;
+    }
+
+    &__item-link:hover,
+     .white-link:hover{
+        background-color: $green;
+        color: $dark;
+        border-color: $dark;
+    }
+
+    .white-link {
+        color: #FFFFFF;
+    }
+
+    .white-link span {
+        background-color: white;
+    }
+
+    .white-link span::before {
+        position: absolute;
+        content: "";
+        border-right: 2px solid $dark;
+        border-top: 2px solid $dark;
+        height: 12px;
+        width: 12px;
+        top: 13px;
+        right: 13px;
+        transform: rotate(24deg);
+        border-radius: 2px;
+    }
+
+    .white-link span::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: $dark;
+        transform: rotate(-21deg);
+        top: 18.7px;
+        right: 12.4px;
+        border-radius: 10px;
+    }
+
+    &__item-link span {
+        position: relative;
+        display: block;
+        width: 41px;
+        height: 41px;
+        background-color: $dark;
+        border-radius: 50%;
+    }
+
+    &__item-link span::before {
+        position: absolute;
+        content: "";
+        border-right: 2px solid #B9FF66;
+        border-top: 2px solid #B9FF66;
+        height: 12px;
+        width: 12px;
+        top: 13px;
+        right: 13px;
+        transform: rotate(24deg);
+        border-radius: 2px;
+    }
+
+    &__item-link span::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: #B9FF66;
+        transform: rotate(-21deg);
+        top: 18.7px;
+        right: 12.4px;
+        border-radius: 10px;
+    }
+
+    &__proposal {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        padding: 60px;
+        background-color: $gray;
+        position: relative;
+        border-radius: 45px;
+        justify-content: space-between;
+        padding-right: 500px;
+    }
+
+    &__proposal-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    &__proposal-title {
+        color: #000;
+        font-family: Space Grotesk;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 26px;
+    }
+
+    &__proposal-text {
+        color: #000;
+        font-family: Space Grotesk;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 26px;
+    }
+
+    &__proposal-btn:hover {
+        background-color: $dark;
+        color: white;
+        border-color: $green;
+    }
+
+    &__proposal-img {
+        position: absolute;
+        right: 135px;
+
+    }
+}
